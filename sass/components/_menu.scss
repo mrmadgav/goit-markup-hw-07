@@ -1,48 +1,46 @@
 .menu {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+
+  &__list {
     display: flex;
-    justify-content: space-between;
-    align-content: center;
-  
-    &__list {
-      display: flex;
-      margin-top: auto;
-      margin-bottom: auto;
-      margin-left: 93px;
-    }
-  
-    &__item {
-      font-family: "Roboto";
-      font-style: normal;
-      font-weight: 500;
-      font-size: 14px;
-      line-height: 16px;
-      letter-spacing: 0.02em;
-    }
-  
-    &__item:not(:last-child) {
-      margin-right: 50px;
-    }
-  
-    &__link {
-      transition-property: all;
-      transition-duration: 250ms;
-      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    }
-    
-    &__link:hover {
-      color: $style-color;
-    }
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 93px;
   }
 
+  &__item {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+  }
 
-  .undertitle-active {
-    position: relative;
+  &__item:not(:last-child) {
+    margin-right: 50px;
+  }
+
+  &__link {
     transition-property: all;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    color: inherit;
   }
-  .undertitle-active:before {
+
+  &__link:hover {
+    color: $style-color;
+  }
+}
+.undertitle-active {
+  position: relative;
+  transition-property: all;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  color: inherit;
+
+  &:before {
     position: absolute;
     content: "";
     height: 48px;
@@ -50,14 +48,15 @@
     width: 100%;
     opacity: 1;
   }
-  .undertitle:hover {
-    position: relative;
-    transition-property: all;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    color: $style-color;
-  }
-  .undertitle:hover:before {
+}
+.undertitle:hover {
+  position: relative;
+  transition-property: all;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  color: $style-color;
+
+  &:before {
     position: absolute;
     content: "";
     height: 48px;
@@ -66,3 +65,4 @@
     opacity: 1;
     color: $style-color;
   }
+}

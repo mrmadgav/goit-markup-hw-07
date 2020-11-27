@@ -1,60 +1,37 @@
 input {
-    font-family: inherit;
-  }
-  
-  .contact-form {
-    width: 448px;
-    min-height: 40px;
-    margin: 0 auto;
-  }
-  
-  .contact-form__input {
+  font-family: inherit;
+}
+
+.contact-form {
+  width: 448px;
+  min-height: 40px;
+  margin: 0 auto;
+
+  &__input {
     width: 100%;
     height: 40px;
     padding-left: 40px;
     border: 2px solid #ccc;
   }
-  
-  .contact-form__input:not(:last-child) {
+  &__input:not(:last-child) {
     margin-bottom: 20px;
   }
-  
-  .contact-form__btn-wrapper {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 40px;
-  }
-  
-  .contact-form__btn {
-    min-width: 200px;
-    height: 50px;
-    cursor: pointer;
-    background-color: $style-color;
-    border: none;
-    color: $white;
-    border-radius: 4px;
-  }
-  .contact-form_btn:after {
-    position: absolute;
-    content: "";
-  }
-  
-  .contact-form__input:focus {
+  &__input:focus {
     outline: none;
   }
   
-  .contact-form__input:required:focus:valid {
+  &__input:required:focus:valid {
     border: 2px solid green;
   }
   
-  .contact-form__input:required:focus:invalid {
+  &__input:required:focus:invalid {
     border: 2px solid $style-color;
   }
   
-  .contact-form__box {
+  &__box {
     margin-bottom: 20px;
   }
-  .contact-form__box-title {
+  &__box-title {
     margin-bottom: 4px;
     font-family: "Roboto";
     font-style: normal;
@@ -64,90 +41,110 @@ input {
     letter-spacing: 0.01em;
     color: $color-contacts;
   }
-  .contact-form__message {
+  &__message {
     width: 100%;
     height: 100px;
     resize: none;
     border: 1px solid rgba(33, 33, 33, 0.2);
   }
-  .form-title {
-    margin-top: 40px;
-    margin-right: 40px;
-    margin-left: 40px;
-    margin-bottom: 20px;
-    text-align: center;
-    font-family: "Roboto";
-    font-style: normal;
-    font-weight: bold;
-    font-size: 20px;
-    line-height: 23px;
-    text-align: center;
-    letter-spacing: 0.03em;
-    color: $main-color;
-  }
-  .contact-form__message::placeholder {
-    font-family: "Roboto";
-    font-style: normal;
-    font-weight: normal;
-    font-size: 12px;
-    line-height: 14px;
-    letter-spacing: 0.01em;
-    color: rgba(117, 117, 117, 0.5);
-    padding: 12px 16px;
-  }
-  textarea {
-    outline: none;
-  }
-  textarea:focus {
-    border: 1px solid $style-color;
-    padding-top: 15px;
-    padding-left: 15px;
-  }
-  .form-input-svg {
-    position: absolute;
-    margin-left: 11px;
-    margin-top: 11px;
-  }
-  .form-input-svg:hover {
-    fill: $style-color;
-  }
-  .form-container-input-svg {
-    display: flex;
-  }
-  .visually-hidden {
-    position: absolute !important;
-    clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
-    clip: rect(1px, 1px, 1px, 1px);
-    padding: 0 !important;
-    border: 0 !important;
-    height: 1px !important;
-    width: 1px !important;
-    overflow: hidden;
-  }
-  .contact-form-policy-label {
-    display: flex;
-    align-items: center;
-    font-size: 12px;
-    margin-bottom: 30px;
-  }
-  
-  .contact-form-policy-label::before {
-    content: "";
-    display: block;
-    width: 16px;  
-    height: 16px;
-    border: 1px solid #000;
-    border-radius: 4px;
-    margin-right: 10px;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  }
-  .contact-form-policy-label-link {
-    color: $style-color;
-    text-decoration: underline;
-  }
-  
-  .modal-form-policy:checked + .contact-form-policy-label::before {
-    border:none;
-    background-image: url("../icon-check.svg");
-    fill: $style-color;
-  }
+}
+.contact-form__btn {
+  min-width: 200px;
+  height: 50px;
+  cursor: pointer;
+  background-color: $style-color;
+  border: none;
+  color: $white;
+  border-radius: 4px;
+
+&-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+&:after {
+  position: absolute;
+  content: "";
+}
+}
+
+.form-title {
+  margin-top: 40px;
+  margin-right: 40px;
+  margin-left: 40px;
+  margin-bottom: 20px;
+  text-align: center;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 23px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: $main-color;
+}
+.contact-form__message::placeholder {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.01em;
+  color: rgba(117, 117, 117, 0.5);
+  padding: 12px 16px;
+}
+textarea {
+  outline: none;
+&:focus {
+  border: 1px solid $style-color;
+  padding-top: 15px;
+  padding-left: 15px;
+}
+}
+.form-input-svg {
+  position: absolute;
+  margin-left: 11px;
+  margin-top: 11px;
+&:hover {
+  fill: $style-color;
+}
+}
+.form-container-input-svg {
+  display: flex;
+}
+.visually-hidden {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0 !important;
+  border: 0 !important;
+  height: 1px !important;
+  width: 1px !important;
+  overflow: hidden;
+}
+.contact-form-policy-label {
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+  margin-bottom: 30px;
+&::before {
+  content: "";
+  display: block;
+  width: 16px;
+  height: 16px;
+  border: 1px solid #000;
+  border-radius: 4px;
+  margin-right: 10px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+}
+.contact-form-policy-label-link {
+  color: $style-color;
+  text-decoration: underline;
+}
+
+.modal-form-policy:checked + .contact-form-policy-label::before {
+  border: none;
+  background-image: url("../icon-check.svg");
+  fill: $style-color;
+}
