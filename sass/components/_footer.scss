@@ -1,0 +1,115 @@
+.footer {
+    background-color: $background;
+    padding-bottom: 60px;
+    padding-top: 60px;
+  }
+  .footer__container {
+    display: flex;
+  }
+  .footer-logo {
+    display: block;
+    margin-bottom: 20px;
+  }
+  .addressContactsItem {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    color: $white ;
+  }
+  .address {
+    display: block;
+  }
+  .address__item {
+    margin-bottom: 9px;
+    margin-top: 9px;
+  }
+  .address__link {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+    color: $color-contacts;
+  
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .address__link:hover {
+    color: $style-color;
+  }
+  .footer .address:not(:last-child) {
+    margin-bottom: 10px;
+  }
+  .footer.contacts.item {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+  }
+  .footer-social-container {
+    display: inline-block;
+    width: 44px;
+    height: 44px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+  }
+  .footer-social-container:not(:first-child) {
+    margin-left: 10px;
+  }
+  .second-logo-part-footer {
+    font-family: "Raleway";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 31px;
+    letter-spacing: 0.03em;
+    color: $white;
+  }
+  .footer-social-icons {
+    width: 20px;
+    height: 20px;
+    fill: $white;
+  }
+  .footer-social-links {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .footer-social-links:hover {
+    background-color: $style-color;
+    fill: $white;
+  }
+  .footer__title-container {
+    margin-left: 70px;
+  }
+  .footer-title {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: $white;
+    margin-bottom: 20px;
+  }
+  .footer__forms-container {
+    margin-left: 93px;
+  }
+  .footer-form-button-container {
+    display: flex;
+    /*  border: 1px solid red;*/
+  }

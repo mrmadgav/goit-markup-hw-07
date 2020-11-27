@@ -1,0 +1,75 @@
+/* TEAM */
+
+.team {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.team__card {
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+.team__card:not(:last-child){
+margin-right: 30px;
+}
+.team__title {
+  text-align: center;
+  margin-bottom: 50px;
+}
+.team__list {
+  display: flex;
+  justify-content: center;
+}
+.team__list-title {
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 10px;
+
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.03em;
+}
+.team__list-description {
+  text-align: center;
+  margin-bottom: 16px;
+
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.03em;
+  color: $color-contacts;
+}
+.worker-icon {
+  position: absolute;
+  top: 29%;
+  left: 29%;
+  width: 20px;
+  height: 20px;
+  fill: $svg-color-main;
+}
+.worker-icons__container {
+  display: inline-block;
+  position: relative;
+  width: 44px;
+  height: 44px;
+  margin-bottom: 20px;
+  border-radius: 50%;
+}
+.worker-icons__container:hover {
+  fill: $white;
+  background-color: $style-color;
+}
+.worker-icons__container:hover svg {
+  fill: $white;
+  background-color: $style-color;
+}
+.worker-icons {
+  padding-left: 32px;
+  padding-right: 32px;
+}
+
+/* END TEAM */

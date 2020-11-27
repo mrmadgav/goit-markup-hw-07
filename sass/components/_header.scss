@@ -1,0 +1,86 @@
+.header {
+  display: flex;
+  justify-content: space-around;
+  align-content: center;
+
+  &__wrapper {
+    display: flex;
+  }
+
+  &__logo {
+    padding-bottom: 25px;
+    padding-top: 25px;
+  }
+
+  &__box {
+    display: flex;
+    align-content: center;
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+
+  &__box:not(:first-child) {
+    margin-left: auto;
+  }
+
+  &__nav {
+    display: flex;
+    margin: auto auto 0 0;
+  }
+
+  &__list {
+    display: flex;
+  }
+
+  &__logo-first {
+    font-family: "Raleway";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 31px;
+    letter-spacing: 0.03em;
+    color: $style-color;
+  }
+
+  &__logo-second {
+    font-family: "Raleway";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 31px;
+    letter-spacing: 0.03em;
+    color: $main-color;
+  }
+
+  &__contacts {
+    display: flex;
+    margin-left: 331px;
+  }
+
+  &__contactsItem:not(:last-child) {
+    margin-right: 50px;
+  }
+
+  &__contactsLink {
+    white-space: nowrap;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+    color: $color-contacts;
+    transition-property: all;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  &__contactsLink:hover {
+    color: $style-color;
+    fill: $style-color;
+  }
+
+  &__contactsSvg {
+    margin-right: 10px;
+  }
+}
