@@ -568,7 +568,7 @@ ul {
 
 @media screen and (min-width: 1200px) {
   .team__card:not(:last-child) {
-    padding-bottom: 94px;
+    padding-bottom: 0px;
   }
 }
 
@@ -628,8 +628,6 @@ ul {
     display: block;
     text-align: center;
     margin: 0 auto;
-    padding-top: 60px;
-    padding-bottom: 60px;
   }
 }
 
@@ -638,15 +636,13 @@ ul {
     display: flex;
     flex-wrap: wrap;
     flex-basis: 50%;
-    padding-top: 60px;
-    padding-bottom: 60px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .team__list {
-    padding-top: 94px;
-    padding-bottom: 94px;
+    padding-top: 0px;
+    padding-bottom: 0px;
   }
 }
 

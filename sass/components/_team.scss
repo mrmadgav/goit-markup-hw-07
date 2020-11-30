@@ -61,7 +61,7 @@
 }
 .team__card:not(:last-child) {
   @media screen and (min-width: 1200px) {
-    padding-bottom: 94px;
+    padding-bottom: 0px;
   }
 }
 .team__card {
@@ -110,20 +110,16 @@
   @media screen and (min-width: 320px) and (max-width: 767px) {
     display: block;
     text-align: center;
-    margin: 0 auto;
-    padding-top: 60px;
-    padding-bottom: 60px;
+    margin: 0 auto;    
   }
 
   @media screen and (min-width: 768px) and (max-width: 1199px) {
     display: flex;
     flex-wrap: wrap;
     flex-basis: 50%;
-    padding-top: 60px;
-    padding-bottom: 60px;
   }
   @media screen and (min-width: 1200px) {
-    padding-top: 94px;
-    padding-bottom: 94px;
+    padding-top: 0px;
+    padding-bottom: 0px;
   }
 }
