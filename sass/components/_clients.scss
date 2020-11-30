@@ -1,6 +1,21 @@
 .clients {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  @media screen and (min-width: 320px) and (max-width: 767px) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    border: 1px solid red;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    border: 1px solid red;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+    border: 1px solid red;
+  }
 
   &__title {
     text-align: center;
@@ -22,8 +37,10 @@
   border: #afb1b8 solid 1px;
   border-radius: 4px;
 
-  &:not(:last-child) {
-    margin-right: 30px;
+  &:not(:last-child) {    
+    @media screen and (min-width: 1200px) {
+      margin-right: 30px;
+    }
   }
 
   &:hover {
@@ -43,5 +60,26 @@
   &:hover {
     fill: $style-color;
     color: $style-color;
+  }
+}
+.clients__list {
+  @media screen and (min-width: 320px) and (max-width: 767px) {
+    flex-wrap: wrap;
+    flex-basis: 50%;
+   
+    justify-content: center;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    flex-wrap: wrap;
+    flex-basis: 33, 333%;
+ 
+    margin: 0 auto;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+ 
   }
 }

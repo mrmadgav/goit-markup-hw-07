@@ -12,9 +12,48 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 528px;
+  width: 448px;
   min-height: 581px;
   background-color: $white;
+}
+.modal-contact-form {
+  position: relative;
+  min-height: 200px;
+  margin: 0 auto;
+  padding: 40px;
+}
+.modal__contact-form__input {
+  width: 100%;
+  height: 40px;
+  padding-left: 10px;
+  border: 2px solid #ccc;
+  padding-left: 35px;
+  margin-bottom: 10px;  
+  &:hover {
+    border-color: $style-color;
+  }
+}
+.modal__contact-form__input {
+  &:hover {
+    border-color: $style-color;
+  }
+  &:hover + .form-input-svg {
+    fill: $style-color;
+  }
+  &:focus + .form-input-svg {
+    fill: $style-color;
+  }
+}
+.contact-form__box {
+  margin-bottom: 20px;  
+}
+.contact-form__box-title {
+  margin-bottom: 10px;
+}
+.contact-form__message {
+  width: 100%;
+  height: 100px;
+  resize: none;
 }
 .modal-button {
   border: none;

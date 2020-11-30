@@ -84,3 +84,31 @@
     margin-right: 10px;
   }
 }
+/* Menu Burger */
+
+.menu-button {
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+
+  @media screen and (min-width: 320) and (max-width: 767px) {
+    display: inline-flex;
+  }
+  @media screen and (min-width: 768) and (max-width: 1199px) {
+    display: none;
+  }
+  @media screen and (min-width: 1200) {
+    .menu-button .icon-cross {
+      display: none;
+    }
+    .menu-button.is-open .icon-cross {
+      display: block;
+    }
+    .menu-button.is-open .icon-menu {
+      display: none;
+    }
+  }
+}
+
+/* Menu Burger END */

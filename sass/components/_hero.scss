@@ -1,8 +1,19 @@
 .hero {
-  padding-top: 200px;
-  padding-bottom: 200px;
   background-color: $background;
   text-align: center;
+
+  @media screen and (min-width: 320px) {
+    padding-top: 118px;
+    padding-bottom: 118px;
+  }
+  @media screen and (min-width: 767px) {
+    padding-top: 118px;
+    padding-bottom: 118px;
+  }
+  @media screen and (min-width: 767px) {
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
 
   &__title {
     margin-bottom: 30px;
@@ -13,13 +24,26 @@
     font-family: "Roboto";
     font-style: normal;
     font-weight: 900;
-    font-size: 44px;
-    line-height: 60px;
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: $white;
-    width: 696px;
+
+    @media screen and (min-width: 320px) {
+      width: 360px;
+      font-size: 26px;
+      line-height: 42px;     
+    }
+    @media screen and (min-width: 767px) {
+      width: 360px;
+      font-size: 26px;
+      line-height: 42px;     
+    }
+    @media screen and (min-width: 1199px) {
+      width: 696px;
+      font-size: 44px;
+      line-height: 60px;
+    }
   }
   &__button {
     margin: 0 auto;
@@ -41,7 +65,7 @@
 
 .overlay {
   max-width: 1600px;
-  height: 600px;
+  max-height: 600px;
   margin-left: auto;
   margin-right: auto;
   background-image: linear-gradient(

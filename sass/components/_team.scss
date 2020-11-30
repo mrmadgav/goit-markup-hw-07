@@ -1,8 +1,20 @@
 /* TEAM */
 
 .team {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  @media screen and (min-width: 320px) and (max-width: 767px) {
+    display: block;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    }
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {    
+    padding-top: 60px;
+    padding-bottom: 60px;
+      }
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;    
+  }
 
   &__card {
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -18,7 +30,7 @@
   }
   &__list {
     display: flex;
-    justify-content: center;
+    justify-content: center;  
   }
   &__list-title {
     text-align: center;
@@ -60,16 +72,40 @@
   height: 44px;
   margin-bottom: 20px;
   border-radius: 50%;
-&:hover {
-  fill: $white;
-  background-color: $style-color;
-}
-&:hover svg {
-  fill: $white;
-  background-color: $style-color;
-}
+  &:hover {
+    fill: $white;
+    background-color: $style-color;
+  }
+  &:hover svg {
+    fill: $white;
+    background-color: $style-color;
+  }
 }
 .worker-icons {
   padding-left: 32px;
   padding-right: 32px;
+}
+.team__list {
+  @media screen and (min-width: 320px) and (max-width: 767px) {
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: 50%;
+    padding-top: 60px;
+    padding-bottom: 60px;
+   
+  }
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+    
+  }
 }
