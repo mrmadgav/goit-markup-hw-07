@@ -55,6 +55,7 @@ ul {
 }
 
 .header {
+  position: relative;
   display: flex;
   justify-content: space-around;
   align-content: center;
@@ -78,24 +79,6 @@ ul {
 
 .header__box:not(:first-child) {
   margin-left: auto;
-}
-
-.header__nav {
-  display: flex;
-  margin: 32 32 0 0;
-}
-
-@media screen and (min-width: 320) {
-  .header__nav {
-    display: inline-block;
-    position: absolute;
-  }
-}
-
-@media screen and (min-width: 768) {
-  .header__nav {
-    display: flex;
-  }
 }
 
 .header__list {
@@ -154,9 +137,41 @@ ul {
   margin-right: 10px;
 }
 
+.header__nav {
+  border: 1px solid red;
+}
+
+@media screen and (min-width: 480) and (min-width: 767) {
+  .header__nav {
+    position: absolute;
+    width: 528px;
+    top: 100%;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid red;
+  }
+}
+
+@media screen and (min-width: 768) and (min-width: 1199) {
+  .header__nav {
+    position: relative;
+    flex-direction: row;
+    border: 1px solid red;
+  }
+}
+
+@media screen and (min-width: 1200) {
+  .header__nav {
+    position: relative;
+    display: flex;
+    margin: 32 32 0 0;
+    border: 1px solid red;
+  }
+}
+
 /* Menu Burger */
 .menu-button {
-  margin: 0;
+  margin-right: 0;
   padding: 0;
   border: none;
   background-color: transparent;
@@ -707,7 +722,14 @@ ul {
 
 .clients__list {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
+}
+
+@media screen and (min-width: 768px) {
+  .clients__list {
+    margin: 0;
+    padding: 0;
+  }
 }
 
 .clients li:hover {
@@ -751,18 +773,16 @@ ul {
   fill: #2196f3;
 }
 
-@media screen and (min-width: 768px) {
-  .client-container:not(:last-child) {
+/*.client-container:not(:last-child) {
+  @media screen and (min-width: 768px) {
     margin-right: 20px;
   }
 }
-
-@media screen and (min-width: 480px) {
-  .client-container:nth-child(odd) {
+.client-container:nth-child(odd) {
+  @media screen and (min-width: 480px) {
     margin-right: 20px;
   }
-}
-
+}*/
 .client-links {
   display: flex;
   align-items: center;
@@ -784,7 +804,7 @@ ul {
   .clients__list {
     flex-wrap: wrap;
     flex-basis: 50%;
-    justify-content: center;
+    justify-content: space-between;
   }
 }
 
@@ -1031,6 +1051,13 @@ ul {
 .contact-form {
   position: relative;
   display: inline-block;
+}
+
+@media screen and (min-width: 1199px) {
+  .contact-form {
+    display: flex;
+    width: 458px;
+  }
 }
 
 .contact-form-btn {

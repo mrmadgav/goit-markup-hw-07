@@ -1,4 +1,5 @@
 .header {
+  position: relative;
   display: flex;
   justify-content: space-around;
   align-content: center;
@@ -22,21 +23,6 @@
   &__box:not(:first-child) {
     margin-left: auto;
   }
-
-  &__nav {
-    display: flex;
-    margin: 32 32 0 0;
-    @media screen and (min-width: 320) {
-      display: inline-block;
-      position: absolute;
-    }
-    @media screen and (min-width: 768) {
-      display: flex;
-    }
-    @media screen and (min-width: 1200) {
-    }
-  }
-
   &__list {
     display: flex;
   }
@@ -93,13 +79,38 @@
     margin-right: 10px;
   }
 }
+
+.header__nav {
+  border: 1px solid red;
+
+  @media screen and (min-width: 480) and (min-width: 767) {
+    position: absolute;
+    width: 528px;
+    top: 100%;
+
+    display: flex;
+    flex-direction: column;
+    border: 1px solid red;
+  }
+  @media screen and (min-width: 768) and (min-width: 1199) {
+    position: relative;
+    flex-direction: row;
+    border: 1px solid red;
+  }
+  @media screen and (min-width: 1200) {
+    position: relative;
+    display: flex;
+    margin: 32 32 0 0;
+    border: 1px solid red;
+  }
+}
 /* Menu Burger */
 
 .menu-button {
-  margin: 0;
+  margin-right: 0;
   padding: 0;
   border: none;
-  background-color: transparent;  
+  background-color: transparent;
 
   @media screen and (min-width: 320) {
     .menu-button .icon-cross {
