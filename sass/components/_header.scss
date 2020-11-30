@@ -25,7 +25,16 @@
 
   &__nav {
     display: flex;
-    margin: auto auto 0 0;
+    margin: 32 32 0 0;
+    @media screen and (min-width: 320) {
+      display: inline-block;
+      position: absolute;
+    }
+    @media screen and (min-width: 768) {
+      display: flex;
+    }
+    @media screen and (min-width: 1200) {
+    }
   }
 
   &__list {
@@ -90,15 +99,9 @@
   margin: 0;
   padding: 0;
   border: none;
-  background-color: transparent;
+  background-color: transparent;  
 
-  @media screen and (min-width: 320) and (max-width: 767px) {
-    display: inline-flex;
-  }
-  @media screen and (min-width: 768) and (max-width: 1199px) {
-    display: none;
-  }
-  @media screen and (min-width: 1200) {
+  @media screen and (min-width: 320) {
     .menu-button .icon-cross {
       display: none;
     }
@@ -108,6 +111,12 @@
     .menu-button.is-open .icon-menu {
       display: none;
     }
+  }
+  @media screen and (min-width: 768) {
+    display: none;
+  }
+  @media screen and (min-width: 1200) {
+    display: none;
   }
 }
 

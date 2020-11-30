@@ -5,15 +5,15 @@
     display: block;
     padding-top: 60px;
     padding-bottom: 60px;
-    }
+  }
 
-  @media screen and (min-width: 768px) and (max-width: 1199px) {    
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
     padding-top: 60px;
     padding-bottom: 60px;
-      }
+  }
   @media screen and (min-width: 1200px) {
     padding-top: 94px;
-    padding-bottom: 94px;    
+    padding-bottom: 94px;
   }
 
   &__card {
@@ -22,7 +22,9 @@
     border-radius: 0px 0px 4px 4px;
   }
   &__card:not(:last-child) {
-    margin-right: 30px;
+    @media screen and (min-width: 1200px) {
+      margin-right: 30px;
+    }
   }
   &__title {
     text-align: center;
@@ -30,7 +32,7 @@
   }
   &__list {
     display: flex;
-    justify-content: center;  
+    justify-content: center;
   }
   &__list-title {
     text-align: center;
@@ -57,6 +59,25 @@
     color: $color-contacts;
   }
 }
+.team__card:not(:last-child) {
+  @media screen and (min-width: 1200px) {
+    padding-bottom: 94px;
+  }
+}
+.team__card {
+  @media screen and (min-width: 480px) {
+    margin-bottom: 60px;
+  }
+  @media screen and (min-width: 768px) {
+    margin-bottom: 30px;
+  }
+}
+.team__card:nth-child(odd) {
+  @media screen and (min-width: 768px) {
+    margin-right: 30px;
+  }
+}
+
 .worker-icon {
   position: absolute;
   top: 29%;
@@ -92,7 +113,6 @@
     margin: 0 auto;
     padding-top: 60px;
     padding-bottom: 60px;
-
   }
 
   @media screen and (min-width: 768px) and (max-width: 1199px) {
@@ -101,11 +121,9 @@
     flex-basis: 50%;
     padding-top: 60px;
     padding-bottom: 60px;
-   
   }
   @media screen and (min-width: 1200px) {
     padding-top: 94px;
     padding-bottom: 94px;
-    
   }
 }
