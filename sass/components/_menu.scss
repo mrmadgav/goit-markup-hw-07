@@ -47,9 +47,13 @@
   &__item:not(:last-child) {
     @media screen and (min-width: 767px) {
       margin-right: 50px;
+      margin-bottom: 0;
+      box-shadow: none;
     }
     @media screen and (min-width: 1199px) {
       margin-right: 50px;
+      margin-bottom: 0;
+      box-shadow: none;
     }
   }
 
