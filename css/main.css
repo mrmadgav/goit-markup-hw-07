@@ -219,9 +219,9 @@ ul {
     position: relative;
     display: flex;
     justify-content: space-between;
-    align-content: center;
+    align-content: baseline;
+    align-items: baseline;
     margin-left: 93px;
-    padding-bottom: 10px;
   }
 }
 
@@ -230,6 +230,7 @@ ul {
     position: relative;
     display: flex;
     justify-content: space-between;
+    align-content: baseline;
     align-items: baseline;
     margin-left: 93px;
   }

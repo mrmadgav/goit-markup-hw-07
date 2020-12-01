@@ -131,14 +131,15 @@
     position: relative;
     display: flex;    
     justify-content: space-between;
-    align-content: center;
-    margin-left: 93px;
-    padding-bottom: 10px;
+    align-content: baseline;
+    align-items: baseline;
+    margin-left: 93px;    
   }
   @media screen and (min-width: 1200px) {
     position: relative;
     display: flex;   
     justify-content: space-between;
+    align-content: baseline;
     align-items: baseline;
     margin-left: 93px;
   }
