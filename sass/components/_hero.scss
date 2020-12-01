@@ -1,20 +1,8 @@
 .hero-container {
-  background-color: $background;
   text-align: center;  
   margin: 0 auto;
 
-  @media screen and (min-width: 320px) and (max-width: 767px) {
-    padding-top: 118px;
-    padding-bottom: 118px;
-  }
-  @media screen and (min-width: 768px) and (max-width: 1199px){
-    padding-top: 118px;
-    padding-bottom: 118px;
-  }
-  @media screen and (min-width: 1200px) {
-    padding-top: 200px;
-    padding-bottom: 200px;
-  }
+  
 
   &__title {
     margin-bottom: 30px;
@@ -78,4 +66,18 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+
+  @media screen and (min-width: 320px) and (max-width: 767px) {
+    padding-top: 118px;
+    padding-bottom: 118px;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1199px){
+    padding-top: 118px;
+    padding-bottom: 118px;
+  }
+  @media screen and (min-width: 1200px) {
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
+ 
 }

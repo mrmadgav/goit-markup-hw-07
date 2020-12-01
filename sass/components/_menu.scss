@@ -36,11 +36,12 @@
       padding: 0;
       margin-bottom: 40px;
     }
-    @media screen and (min-width: 767px) {
+    @media screen and (min-width: 768px) {
       display: flex;
+      margin-bottom: 0;
     }
-    @media screen and (min-width: 767px) {
-      display: flex;
+    @media screen and (min-width: 1200px) {
+      display: flex;     
     }
   }
 
@@ -72,12 +73,12 @@
   transition-property: all;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  color: inherit;
+  color: inherit;  
 
   &:before {
     position: absolute;
     content: "";
-    height: 48px;
+    bottom: -32px;
     border-bottom: solid 3px $style-color;
     width: 100%;
     opacity: 1;

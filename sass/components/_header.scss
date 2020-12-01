@@ -5,11 +5,11 @@
   }
   @media screen and (min-width: 768px) and (max-width: 1199px) {
     justify-content: space-between;
-    align-items: baseline;
-    align-content: baseline;
+    align-items: center;  
   }
   @media screen and (min-width: 1200px) {
     justify-content: space-between;
+    align-items: center;
   }
 }
 .header {
@@ -77,10 +77,10 @@
   }
 
   &__contactsItem:not(:last-child) {
-    @media screen and (min-width: 320px) {
+    @media screen and (min-width: 320px) and (max-width: 767px){
       margin-bottom: 16px;
     }
-    @media screen and (min-width: 767px) {
+    @media screen and (min-width: 768px) {
       margin-right: 50px;
     }
     @media screen and (min-width: 1199px) {
@@ -114,8 +114,7 @@
 
 .header__wrapper {
   z-index: 1;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08),
-    0px 1px 3px rgba(0, 0, 0, 0.16);
+  
 
   @media screen and (min-width: 320px) and (max-width: 767px) {
     display: inline-block;
@@ -127,23 +126,24 @@
     text-align: center;
     padding-top: 60px;
     padding-bottom: 60px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08),
+    0px 1px 3px rgba(0, 0, 0, 0.16);
   }
 
   @media screen and (min-width: 768px) and (max-width: 1199px) {
     position: relative;
     display: flex;    
-    justify-content: space-between;
-    align-content: baseline;
-    align-items: baseline;
+    justify-content: space-between;   
+    align-items: center;
     margin-left: 93px;    
   }
   @media screen and (min-width: 1200px) {
     position: relative;
     display: flex;   
-    justify-content: space-between;
-    align-content: baseline;
-    align-items: baseline;
+    justify-content: space-between; 
     margin-left: 93px;
+    align-items: center;
+    width: 100%;
   }
 }
 .header__wrapper.is-open {
