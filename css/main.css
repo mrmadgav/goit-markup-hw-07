@@ -218,7 +218,6 @@ ul {
   .header__wrapper {
     position: relative;
     display: flex;
-    margin-top: 32px;
     justify-content: space-between;
     align-content: center;
     margin-left: 93px;
@@ -230,7 +229,6 @@ ul {
   .header__wrapper {
     position: relative;
     display: flex;
-    margin-top: 32px;
     justify-content: space-between;
     align-items: baseline;
     margin-left: 93px;
