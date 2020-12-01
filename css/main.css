@@ -173,6 +173,11 @@ ul {
   margin-right: 10px;
 }
 
+.header__wrapper {
+  z-index: 1;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
+}
+
 @media screen and (min-width: 320px) and (max-width: 767px) {
   .header__wrapper {
     display: inline-block;
@@ -417,7 +422,6 @@ ul {
 
 @media screen and (min-width: 320px) {
   .hero__title {
-    width: 360px;
     font-size: 26px;
     line-height: 42px;
   }
@@ -528,8 +532,10 @@ ul {
 
 .advantages__svg {
   display: block;
-  margin-top: 50px;
-  margin-bottom: 50px;
+  padding-bottom: 30px;
+  padding-top: 30px;
+  margin-top: 20px;
+  margin-bottom: 20px;
   background: #f5f4fa;
   border-radius: 4px;
   text-align: center;
@@ -616,6 +622,10 @@ ul {
 }
 
 /* TEAM */
+.team-container {
+  background-color: #f5f4fa;
+}
+
 @media screen and (min-width: 320px) and (max-width: 767px) {
   .team {
     display: block;
@@ -922,13 +932,6 @@ ul {
     flex-wrap: wrap;
     flex-basis: 33, 33%;
     margin: 0 auto;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .clients__list {
-    padding-top: 94px;
-    padding-bottom: 94px;
   }
 }
 
@@ -1593,20 +1596,37 @@ button:focus {
 .filter-grid {
   display: flex;
   align-items: center;
-  justify-content: center;
   flex-wrap: wrap;
+  margin: -15px;
 }
 
 .cards {
   position: relative;
   display: inline-block;
   overflow: hidden;
-  margin-bottom: 30px;
-  margin-right: 25px;
+  margin: 15px;
   border: 1px solid #eeeeee;
   transition-property: all;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .cards {
+    width: 450px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .cards {
+    width: 354px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .cards {
+    width: 370px;
+  }
 }
 
 .cards:hover {
@@ -1614,30 +1634,6 @@ button:focus {
   border: 1px solid #eeeeee;
   box-sizing: border-box;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
-}
-
-.cards:nth-child(3) {
-  margin-right: 0px;
-}
-
-.cards:nth-child(6) {
-  margin-right: 0px;
-}
-
-.cards:nth-child(9) {
-  margin-right: 0px;
-}
-
-.cards:nth-child(7) {
-  margin-bottom: 0px;
-}
-
-.cards:nth-child(8) {
-  margin-bottom: 0px;
-}
-
-.cards:nth-child(9) {
-  margin-bottom: 0px;
 }
 
 .grid-container {

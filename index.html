@@ -14,16 +14,17 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&amp;family=Roboto:wght@400;500;700;900&amp;display=swap">
   </head>
   <body>
-    <header class="header container">
+    <header class="header">
+      <div class="container">
       <logo class="header__logo">
         <a class="header__link"
           href="./index.html"><span
             class="header__logo-first">Web</span><span
             class="header__logo-second">Studio</span> </a>
       </logo>
-      <button type="button" class="menu-button" data-menu-button><svg width="40" height="40" aria-label="Переключатель мобильного меню"> 
-        <use class="icon-cross" href="./sprite.svg#icon-menu"></use>
-        <use class="icon-menu"  href="./sprite.svg#icon-krest"></use></svg></button>
+      <button type="button" class="menu-button is-open" data-menu-button><svg width="40" height="40" aria-label="Переключатель мобильного меню"> 
+        <use class="icon-cross" href="./sprite.svg#icon-krest"></use>
+        <use class="icon-menu"  href="./sprite.svg#icon-menu"></use></svg></button>
         <div class="header__wrapper" data-menu>
             <nav class="header__nav mobile__nav">             
               <ul class="menu__list">
@@ -50,15 +51,16 @@
                         href="./sprite.svg#icon-smartphone"></use>
                     </svg>+38 096 111 11 11</a></li>
               </ul>           
-          </div>      
+          </div>     
+        </div> 
     </header> 
-    <main class="main">
-     <div class="hero overlay">
-        <hero>
-          <h1 class="hero__title">Эффективные решения для вашего
+    <main class="main">   
+      <div class="hero overlay">
+        <div class="hero">     
+                  <h1 class="hero__title">Эффективные решения для вашего
             бизнеса</h1>
           <button class="hero__button" data-modal-open>Заказать услугу</button>
-        </hero>
+          </div>
       </div>
      <div class="container">
         <section class="advantages">
@@ -119,7 +121,8 @@
            
             </div>
           </section>
-        <section class="activity container">
+        <section class="activity">
+          <div class="container">
             <h2 class="activity__title secion-title">Чем мы занимаемся</h2>
             <ul class="activity__list">
               <li class="activity__item"><p class="activity__text
@@ -147,15 +150,17 @@
                   width="370"
                   /></li>
             </ul>
+          </div>  
           </section>  
-         <section class="team container">
+         <section class="team">
+           <div class="container team-container">
             <h2 class="team__title secion-title">Наша команда</h2>
             <ul class="team__list">
               <li class="team__card"> 
               <picture>
-                <source srcset="./images/team/employee1-desktop.jpg" media="(min-width: 1200px)">  
-                  <source srcset="./images/team/employee1-tablet.jpg" media="(min-width: 768px)">
-                  <source srcset="./images/team/employee1-mobile.jpg" media="(min-width: 320px)">
+                <source srcset="./images/team/employee1-desktop.jpg, ./images/team/employee1-desktop@2x.jpg" media="(min-width: 1200px)">  
+                  <source srcset="./images/team/employee1-tablet.jpg, ./images/team/employee1-tablet@2x.jpg" media="(min-width: 768px)">
+                  <source srcset="./images/team/employee1-mobile.jpg, ./images/team/employee1-mobile@2x.jpg" media="(min-width: 320px)">
                 <img src="./images/team/employee1-desktop.jpg" alt="Игорь
                   Демьяненко" class="team__list-image">
               </picture>                                    
@@ -206,8 +211,12 @@
                 </div>
               </li>
               <li class="team__card">
-                <img src="images/imgrep.jpg" width="270"
-                  alt="Ольга Репина" class="team__list-image">
+                <picture>
+                  <source srcset="./images/team/employee2-desktop.jpg, ./images/team/employee2-desktop@2x.jpg " media="(min-width: 1200px)">  
+                    <source srcset="./images/team/employee2-tablet.jpg, ./images/team/employee2-tablet@2x.jpg" media="(min-width: 768px)">
+                    <source srcset="./images/team/employee2-mobile.jpg, ./images/team/employee2-mobile@2x.jpg" media="(min-width: 320px)">
+                  <img src="./images/team/employee2-desktop.jpg" alt="Ольга Репина" class="team__list-image">
+                </picture>       
                 <h3 class="team__list-title">Ольга Репина</h3>
                 <p class="team__list-description">Frontend Developer</p>
                 <div class="worker-icons">
@@ -255,9 +264,12 @@
                 </div>
               </li>
               <li class="team__card">
-                <img src="images/imgtar.jpg"
-                  width="270"
-                  alt="Николай Тарасов" class="team__list-image">
+                <picture>
+                  <source srcset="./images/team/employee3-desktop.jpg, ./images/team/employee3-desktop@2x.jpg " media="(min-width: 1200px)">  
+                    <source srcset="./images/team/employee3-tablet.jpg, ./images/team/employee3-tablet@2x.jpg " media="(min-width: 768px)">
+                    <source srcset="./images/team/employee3-mobile.jpg, ./images/team/employee3-mobile@2x.jpg " media="(min-width: 320px)">
+                  <img src="./images/team/employee3-desktop.jpg" alt="Николай Тарасов" class="team__list-image">
+                </picture>       
                 <h3 class="team__list-title">Николай Тарасов</h3>
                 <p class="team__list-description">Marketing</p>
                 <div class="worker-icons">
@@ -305,8 +317,12 @@
                 </div>
               </li>
               <li class="team__card">
-                <img src="images/imgerm.jpg" width="270"
-                  alt="Михаил Ермаков" class="team__list-image">
+                <picture>
+                  <source srcset="./images/team/employee4-desktop.jpg, ./images/team/employee4-desktop@2x.jpg" media="(min-width: 1200px)">  
+                    <source srcset="./images/team/employee4-tablet.jpg, ./images/team/employee4-tablet@2x.jpg" media="(min-width: 768px)">
+                    <source srcset="./images/team/employee4-mobile.jpg, ./images/team/employee4-mobile@2x.jpg" media="(min-width: 320px)">
+                  <img src="./images/team/employee4-desktop.jpg" alt="Михаил Ермаков" class="team__list-image">
+                </picture>       
                 <h3 class="team__list-title">Михаил Ермаков</h3>
                 <p class="team__list-description">UI Designer</p>
                 <div class="worker-icons">
@@ -354,8 +370,10 @@
                 </div>
               </li>
             </ul>
+          </div>
           </section>
-          <section class="clients container">
+          <section class="clients">
+            <div class="container">
             <h2 class="clients__title secion-title">Наши клиенты</h2>
             <div class="client-icons">
               <ul class="clients__list">
@@ -517,6 +535,7 @@
                     </form>
                   </div>
                 </div>
+              </div>
               </section>
             </div>
           </div>

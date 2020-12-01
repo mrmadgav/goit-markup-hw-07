@@ -15,57 +15,52 @@
     </head>
     <body>
         <!-- HEADER -->
-        <header class="header container">
+        <header class="header">
+            <div class="container">
             <logo class="header__logo">
-                <a class="header__link"
-                    href="./index.html"><span
-                        class="header__logo-first">Web</span><span
-                        class="header__logo-second">Studio</span> </a>
+              <a class="header__link"
+                href="./index.html"><span
+                  class="header__logo-first">Web</span><span
+                  class="header__logo-second">Studio</span> </a>
             </logo>
-            <button type="button" class="menu-button" data-menu-button><svg
-                    width="40" height="40" aria-label="Переключатель мобильного
-                    меню">
-                    <use class="icon-cross" href="./sprite.svg#icon-menu"></use>
-                    <use class="icon-menu" href="./sprite.svg#icon-krest"></use></svg></button>
-            <div class="header__wrapper" data-menu>
-                <nav class="header__nav mobile__nav">
+            <button type="button" class="menu-button is-open" data-menu-button><svg width="40" height="40" aria-label="Переключатель мобильного меню"> 
+              <use class="icon-cross" href="./sprite.svg#icon-krest"></use>
+              <use class="icon-menu"  href="./sprite.svg#icon-menu"></use></svg></button>
+              <div class="header__wrapper" data-menu>
+                  <nav class="header__nav mobile__nav">             
                     <ul class="menu__list">
-                        <li class="menu__item"><a href="./index.html"
-                                class="menu__link
-                                menu__link undertitle">Студия</a></li>
-                        <li class="menu__item"><a href="./portfolio.html"
-                                class="menu__link undertitle-active">Портфолио</a></li>
-                        <li class="menu__item"><a href="" class="menu__link
-                                undertitle">Контакты</a></li>
+                      <li class="menu__item"><a href="./index.html" class="menu__link
+                          menu__link undertitle-active">Студия</a></li>
+                      <li class="menu__item"><a href="./portfolio.html"
+                          class="menu__link undertitle">Портфолио</a></li>
+                      <li class="menu__item"><a href="" class="menu__link undertitle">Контакты</a></li>
                     </ul>
-                </nav>
-                <ul class="header__list">
-                    <li class="header__contactsItem"><a
-                            class="header__contactsLink"
-                            href="mailto:info@devstudio.com"><svg
-                                class="header__contactsSvg" width="16"
-                                height="10">
-                                <use
-                                    href="./sprite.svg#icon-envelope"></use>
-                            </svg>info@devstudio.com</a></li>
-                    <li class="header__contactsItem"><a
-                            class="header__contactsLink"
-                            href="tel:+380961111111"><svg
-                                class="header__contactsSvg"
-                                width="10"
-                                height="16">
-                                <use
-                                    href="./sprite.svg#icon-smartphone"></use>
-                            </svg>+38 096 111 11 11</a></li>
-                </ul>
-            </div>
-        </header>
+                  </nav>           
+                    <ul class="header__list">
+                      <li class="header__contactsItem"><a class="header__contactsLink"
+                          href="mailto:info@devstudio.com"><svg
+                            class="header__contactsSvg" width="16"
+                            height="10">
+                            <use
+                              href="./sprite.svg#icon-envelope"></use>
+                          </svg>info@devstudio.com</a></li>
+                      <li class="header__contactsItem"><a class="header__contactsLink"
+                          href="tel:+380961111111"><svg class="header__contactsSvg"
+                            width="10"
+                            height="16">
+                            <use
+                              href="./sprite.svg#icon-smartphone"></use>
+                          </svg>+38 096 111 11 11</a></li>
+                    </ul>           
+                </div>     
+              </div> 
+          </header> 
         <div class="border"></div>
         <!-- панель вкладок -->
         <main>
-            <div class="container">
+            
                 <section class="button-panel">
-                    <div>
+                    <div class="container">                    
                         <ul class="filter-button">
                             <li class="button-block">
                                 <button type="button" class="button__filter">Все</button>
@@ -83,10 +78,11 @@
                                 <button type="button" class="button__filter">Маркетинг</button>
                             </li>
                         </ul>
-                    </div>
+                    </div>            
                 </section>
                 <!-- преимущества -->
                 <section class="grid-container">
+                    <div class="container">
                     <ul class="filter-grid item-grid">
                         <li class="cards">
                             <div class="cards-overlay">
@@ -193,6 +189,7 @@
                             </div>
                         </li>
                     </ul>
+                </div>
                 </section>
             </main>
             <!-- FOOTER -->
@@ -367,6 +364,7 @@
                 </div>
             </div>
             <script src="./js/modal.js"></script>
+            <script src="./js/menu.js"></script>
         </div>
     </body>
 </html>
