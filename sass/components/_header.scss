@@ -24,7 +24,17 @@
     margin-left: auto;
   }
   &__list {
-    display: flex;
+    @media screen and (min-width: 320px) and (max-width: 767px) {
+      display: inline-block;
+    }
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+      display: inline-block;
+      margin-left: 50px;
+    }
+    @media screen and (min-width: 1200px) {
+      display: flex;
+      margin-left: 50px;
+    }
   }
 
   &__logo-first {
@@ -48,12 +58,20 @@
   }
 
   &__contacts {
-    display: flex;
+    display: inline-block;
     margin-left: 331px;
   }
 
   &__contactsItem:not(:last-child) {
-    margin-right: 50px;
+    @media screen and (min-width: 320px) {
+      margin-bottom: 16px;
+    }
+    @media screen and (min-width: 767px) {
+      margin-right: 50px;
+    }
+    @media screen and (min-width: 1199px) {
+      margin-right: 50px;
+    }
   }
 
   &__contactsLink {
@@ -80,29 +98,42 @@
   }
 }
 
-.header__nav {
-  border: 1px solid red;
-
-  @media screen and (min-width: 480) and (min-width: 767) {
+.header__wrapper {
+  @media screen and (min-width: 320px) and (max-width: 767px) {
+    display: inline-block;
     position: absolute;
-    width: 528px;
+    width: 100%;
     top: 100%;
+    left: 0;
+    background: #fff;
+    text-align: center;
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
 
-    display: flex;
-    flex-direction: column;
-    border: 1px solid red;
-  }
-  @media screen and (min-width: 768) and (min-width: 1199) {
-    position: relative;
-    flex-direction: row;
-    border: 1px solid red;
-  }
-  @media screen and (min-width: 1200) {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
     position: relative;
     display: flex;
-    margin: 32 32 0 0;
-    border: 1px solid red;
+    margin-top: 32px;
+    justify-content: baseline;
+    align-content: center;
+    margin-left: 93px;
+    padding-bottom: 10px;
   }
+  @media screen and (min-width: 1200px) {
+    position: relative;
+    display: flex;
+    margin-top: 32px;
+    justify-content: space-between;
+    align-content: center;
+    margin-left: 93px;
+  }
+}
+.header__wrapper.is-open {
+  display: none;
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
 }
 /* Menu Burger */
 
@@ -112,21 +143,19 @@
   border: none;
   background-color: transparent;
 
-  @media screen and (min-width: 320) {
-    .menu-button .icon-cross {
-      display: none;
-    }
-    .menu-button.is-open .icon-cross {
-      display: block;
-    }
-    .menu-button.is-open .icon-menu {
-      display: none;
-    }
-  }
-  @media screen and (min-width: 768) {
+  & .icon-cross {
     display: none;
   }
-  @media screen and (min-width: 1200) {
+  &.is-open .icon-cross {
+    display: block;
+  }
+  &.is-open .icon-menu {
+    display: none;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    display: none;
+  }
+  @media screen and (min-width: 1200px) {
     display: none;
   }
 }

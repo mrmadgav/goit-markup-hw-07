@@ -5,9 +5,22 @@
 
   &__list {
     display: flex;
+
     margin-top: auto;
     margin-bottom: auto;
-    margin-left: 93px;
+
+    @media screen and (min-width: 320px) and (max-width: 768px) {
+      display: block;
+      margin: 0;
+      padding: 0;
+      margin-bottom: 60px;
+    }
+    @media screen and (min-width: 768px) {
+      display: flex;
+    }
+    @media screen and (min-width: 1200px) {
+      display: flex;
+    }
   }
 
   &__item {
@@ -17,10 +30,27 @@
     font-size: 14px;
     line-height: 16px;
     letter-spacing: 0.02em;
+
+    @media screen and (min-width: 320px) {
+      margin: 0;
+      padding: 0;
+      margin-bottom: 40px;
+    }
+    @media screen and (min-width: 767px) {
+      display: flex;
+    }
+    @media screen and (min-width: 767px) {
+      display: flex;
+    }
   }
 
   &__item:not(:last-child) {
-    margin-right: 50px;
+    @media screen and (min-width: 767px) {
+      margin-right: 50px;
+    }
+    @media screen and (min-width: 1199px) {
+      margin-right: 50px;
+    }
   }
 
   &__link {
@@ -47,6 +77,10 @@
     border-bottom: solid 3px $style-color;
     width: 100%;
     opacity: 1;
+
+    @media screen and (min-width: 320px) and (max-width: 767px) {
+      height: 25px;
+    }
   }
 }
 .undertitle:hover {
