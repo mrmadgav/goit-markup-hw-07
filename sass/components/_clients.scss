@@ -87,7 +87,13 @@
   }
 }
 .clients__list {
-  @media screen and (min-width: 320px) and (max-width: 767px) {
+  @media screen and (min-width: 320px) and (max-width: 479px) {
+    flex-wrap: wrap;
+    justify-content: center;
+
+  }
+
+  @media screen and (min-width: 480px) and (max-width: 767px) {
     flex-wrap: wrap;
     flex-basis: 50%;
 

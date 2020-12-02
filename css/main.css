@@ -958,7 +958,14 @@ ul {
   color: #2196f3;
 }
 
-@media screen and (min-width: 320px) and (max-width: 767px) {
+@media screen and (min-width: 320px) and (max-width: 479px) {
+  .clients__list {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 767px) {
   .clients__list {
     flex-wrap: wrap;
     flex-basis: 50%;
@@ -1634,6 +1641,12 @@ button:focus {
   align-content: center;
 }
 
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .filter-button {
+    justify-content: flex-start;
+  }
+}
+
 .filter-grid {
   display: flex;
   align-items: center;
@@ -1652,7 +1665,7 @@ button:focus {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-@media screen and (min-width: 480px) and (max-width: 767px) {
+@media screen and (min-width: 320px) and (max-width: 767px) {
   .cards {
     width: 450px;
   }
