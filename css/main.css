@@ -294,7 +294,7 @@ ul {
   margin-bottom: auto;
 }
 
-@media screen and (min-width: 320px) and (max-width: 768px) {
+@media screen and (min-width: 320px) and (max-width: 767px) {
   .menu__list {
     display: block;
     margin: 0;
