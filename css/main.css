@@ -273,15 +273,15 @@ ul {
   }
 }
 
-.menu-button .icon-menu {
+.icon-menu {
   display: none;
 }
 
-.menu-button.is-open .icon-menu {
+.icon-menu .is-open {
   display: block;
 }
 
-.menu-button.is-open .icon-cross {
+.icon-cross .is-open {
   display: none;
 }
 
