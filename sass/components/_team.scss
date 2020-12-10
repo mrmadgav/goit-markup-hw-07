@@ -3,7 +3,7 @@
   background-color: #f5f4fa;
 }
 .team {
-  @media screen and (min-width: 320px) and (max-width: 767px) {
+  @media screen and (max-width: 767px) {
     display: block;
     padding-top: 60px;
     padding-bottom: 60px;
@@ -24,7 +24,7 @@
     border-radius: 0px 0px 4px 4px;
     background-color: white;
 
-    @media screen and (min-width: 480px) and (max-width: 767px) {
+    @media screen and (max-width: 767px) {
       width: 450px;
       margin: 0 auto;
     }
@@ -73,10 +73,10 @@
   }
 }
 .team__card {
-  @media screen and (min-width: 480px) {
+  @media screen and (max-width: 767px) {
     margin-bottom: 60px;
   }
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
     margin-bottom: 30px;
   }
 }
@@ -116,7 +116,7 @@
   padding-right: 32px;
 }
 .team__list {
-  @media screen and (min-width: 320px) and (max-width: 767px) {
+  @media screen and (max-width: 767px) {
     display: block;
     text-align: center;
     margin: 0 auto;

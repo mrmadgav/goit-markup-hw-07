@@ -1,8 +1,6 @@
 .hero-container {
-  text-align: center;  
+  text-align: center;
   margin: 0 auto;
-
-  
 
   &__title {
     margin-bottom: 30px;
@@ -17,17 +15,16 @@
     text-transform: uppercase;
     color: $white;
 
-    @media screen and (min-width: 320px) {
-    
+    @media screen and (max-width: 767px) {
       font-size: 26px;
-      line-height: 42px;     
+      line-height: 42px;
     }
-    @media screen and (min-width: 767px) {
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
       width: 360px;
       font-size: 26px;
-      line-height: 42px;     
+      line-height: 42px;
     }
-    @media screen and (min-width: 1199px) {
+    @media screen and (min-width: 1200px) {
       width: 696px;
       font-size: 44px;
       line-height: 60px;
@@ -54,7 +51,7 @@
 .overlay {
   max-width: 1600px;
   max-height: 600px;
-  
+
   margin-left: auto;
   margin-right: auto;
   background-image: linear-gradient(
@@ -67,11 +64,11 @@
   background-repeat: no-repeat;
   background-position: center;
 
-  @media screen and (min-width: 320px) and (max-width: 767px) {
+  @media screen and (max-width: 767px) {
     padding-top: 118px;
     padding-bottom: 118px;
   }
-  @media screen and (min-width: 768px) and (max-width: 1199px){
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
     padding-top: 118px;
     padding-bottom: 118px;
   }
@@ -79,5 +76,4 @@
     padding-top: 200px;
     padding-bottom: 200px;
   }
- 
 }

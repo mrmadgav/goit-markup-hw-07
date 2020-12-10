@@ -9,13 +9,13 @@
     margin-top: auto;
     margin-bottom: auto;
 
-    @media screen and (min-width: 320px) and (max-width: 767px) {
+    @media screen and (max-width: 767px) {
       display: block;
       margin: 0;
       padding: 0;
       margin-bottom: 60px;
     }
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
       display: flex;
     }
     @media screen and (min-width: 1200px) {
@@ -31,7 +31,7 @@
     line-height: 16px;
     letter-spacing: 0.02em;
 
-    @media screen and (min-width: 320px) {
+    @media screen and (max-width: 767px) {
       margin: 0;
       padding: 0;
       margin-bottom: 40px;
@@ -41,7 +41,7 @@
       margin-bottom: 0;
     }
     @media screen and (min-width: 1200px) {
-      display: flex;     
+      display: flex;
     }
   }
 
@@ -73,7 +73,7 @@
   transition-property: all;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  color: inherit;  
+  color: inherit;
 
   &:before {
     position: absolute;
@@ -83,7 +83,7 @@
     width: 100%;
     opacity: 1;
 
-    @media screen and (min-width: 320px) and (max-width: 767px) {
+    @media screen and (max-width: 767px) {
       height: 25px;
     }
   }
