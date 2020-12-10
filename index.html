@@ -12,6 +12,40 @@
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&amp;family=Roboto:wght@400;500;700;900&amp;display=swap">
+    <!-- <script>
+        window.onload = windowload;
+    window.onresize = AppendScript;
+ 
+    function windowload() {
+        AppendScript();
+    }
+  
+    function AppendScript() {
+ 
+        if (window.innerWidth >= 768) {
+            Include("./js/menu.js", "off")          
+        }
+        else {
+          Include("./js/menu.js", "on")          
+        }
+    }
+ 
+    function Include(filename, status) {
+        var head = document.getElementsByTagName('head')[0];
+        if (status == 'on') {
+            script = document.createElement('script');
+            script.src = filename;
+            script.type = 'text/javascript';
+            head.appendChild(script)
+        }
+        else if (status == 'off') {
+            var scripts = head.getElementsByTagName('script');
+            if (scripts.length > 0) {
+                head.removeChild(scripts[1]);
+            }
+        }
+    }
+  </script> -->
   </head>
   <body>
     <header class="header">
@@ -22,9 +56,9 @@
               class="header__logo-first">Web</span><span
               class="header__logo-second">Studio</span> </a>
         </logo>
-        <button type="button" class="menu-button is-open" data-menu-button><svg
+        <button type="button" class="menu-button" data-menu-button><svg
             width="24" height="24" aria-label="Переключатель мобильного меню">
-            <use class="icon-cross" href="./sprite.svg#icon-krest"></use>
+            <use class="icon-cross is-open" href="./sprite.svg#icon-krest"></use>
             <use class="icon-menu" href="./sprite.svg#icon-menu"></use></svg></button>
         <div class="header__wrapper" data-menu>
           <nav class="header__nav mobile__nav">

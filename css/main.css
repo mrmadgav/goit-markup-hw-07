@@ -261,20 +261,6 @@ ul {
   box-shadow: none;
 }
 
-.menu-button .icon-cross {
-  display: none;
-}
-
-.menu-button.is-open .icon-cross {
-  display: block;
-}
-
-@media screen and (max-width: 767px) {
-  .menu-button.is-open .icon-menu {
-    display: none;
-  }
-}
-
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .menu-button {
     display: none;
@@ -287,6 +273,22 @@ ul {
   }
 }
 
+.menu-button .icon-menu {
+  display: none;
+}
+
+.menu-button.is-open .icon-menu {
+  display: block;
+}
+
+.menu-button.is-open .icon-cross {
+  display: none;
+}
+
+/*.header__wrapper .is-open {
+  display: block;
+}
+*/
 /* Menu Burger END */
 .menu {
   display: flex;
