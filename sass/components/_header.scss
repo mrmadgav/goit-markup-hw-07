@@ -169,6 +169,8 @@
     display: none;
   }
 }
+
+@media screen and (max-width: 767px) {
   .icon-menu {
     display: none;
   }
@@ -178,7 +180,7 @@
   .icon-cross .is-open {
     display: none;
   }
-
+}
 /*.header__wrapper .is-open {
   display: block;
 }

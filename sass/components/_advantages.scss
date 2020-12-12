@@ -34,14 +34,16 @@
 }
 
 .advantages__item:not(:last-child) {
-  @media screen and (min-width: 768px) {
-    margin-right: 30px;
-  }
   @media screen and (min-width: 1199px) {
     margin-right: 30px;
   }
 }
 
+.advantages__item:nth-child(odd) {
+  @media screen and (min-width: 768px) and (max-width: 1199px){
+    margin-right: 30px;
+  }
+}
 .advantages {
   &__title {
     margin-bottom: 10px;
@@ -53,7 +55,7 @@
     line-height: 16px;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    
+
     @media screen and (max-width: 767px) {
       text-align: center;
     }

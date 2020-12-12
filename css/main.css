@@ -273,16 +273,16 @@ ul {
   }
 }
 
-.icon-menu {
-  display: none;
-}
-
-.icon-menu .is-open {
-  display: block;
-}
-
-.icon-cross .is-open {
-  display: none;
+@media screen and (max-width: 767px) {
+  .icon-menu {
+    display: none;
+  }
+  .icon-menu .is-open {
+    display: block;
+  }
+  .icon-cross .is-open {
+    display: none;
+  }
 }
 
 /*.header__wrapper .is-open {
@@ -559,14 +559,14 @@ ul {
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1199px) {
   .advantages__item:not(:last-child) {
     margin-right: 30px;
   }
 }
 
-@media screen and (min-width: 1199px) {
-  .advantages__item:not(:last-child) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .advantages__item:nth-child(odd) {
     margin-right: 30px;
   }
 }
